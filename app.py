@@ -41,8 +41,9 @@ df = pd.DataFrame([selected_data])
 st.subheader('The Selected Features are below:')
 st.dataframe(df)
 
-with open('model.pkl', 'rb') as file:
-    model = pickle.load(file)
+
+model = joblib.load('model.pkl')
+    
 
 le_processor = joblib.load('le_processor.pkl')
 le_os = joblib.load('le_os.pkl')
