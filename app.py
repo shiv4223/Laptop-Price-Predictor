@@ -64,3 +64,5 @@ if st.button('Predict'):
     st.write(':red[The Predicted Price of the Laptop is:]', val[0])
 else:
     st.write('Select Your Options and Press Predict Button')
+
+
