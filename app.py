@@ -57,5 +57,10 @@ df['RAM TYPE'] = le_ram_type.transform(df['RAM TYPE'])
 
 val = model.predict(df.iloc[[0]])
 
-st.subheader('The Predicted Price is below:')
-st.write(':red[The Predicted Price of the Laptop is:]', val[0])
+
+st.button("Reset", type="primary")
+if st.button('Predict'):
+    st.subheader('The Predicted Price is below:')
+    st.write(':red[The Predicted Price of the Laptop is:]', val[0])
+else:
+    st.write('Select Your Options and Press Predict Button')
