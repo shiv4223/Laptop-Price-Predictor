@@ -61,4 +61,5 @@ tzlocal==4.2
 urllib3==1.26.14
 validators==0.20.0
 Werkzeug==2.2.3
+xgboost==2.0.0
 zipp==3.15.0
